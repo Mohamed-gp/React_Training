@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  background-color: #D3F1FF;
+}
+header li:not(:last-child) a::before{
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  left: -10%;
+}
+header li:not(:last-child) a:hover:before{
+  background-color: #003B6B;
+  transition-duration: .5s;
+}
